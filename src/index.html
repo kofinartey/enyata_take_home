@@ -9,7 +9,138 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./app.css" />
     <title>Ear1</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__wrapper">
+          <div class="logo">
+            <img src="../assets/logo_main.png" alt="logo" />
+          </div>
+          <div class="desktop-links">
+            <a href="#">Home</a>
+            <a href="#">For Fans</a>
+            <a href="#">For Influencers</a>
+            <a href="#">Features</a>
+            <a href="#">FAQ's</a>
+          </div>
+          <div class="toggler">
+            <img src="../assets/icon-hamburger.svg" alt="" />
+          </div>
+          <div class="overlay"></div>
+          <div class="mobile-menu">
+            <a href="#">Home</a>
+            <a href="#">For Fans</a>
+            <a href="#">For Influencers</a>
+            <a href="#">Features</a>
+            <a href="#">FAQ's</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO section -->
+      <section class="hero">
+        <h1 id="hero__heading">Build direct, meaningful connections.</h1>
+        <p id="hero__text">
+          Ear1 helps you connect directly with your favourite influencers for a
+          small fee. What more? We assure you of getting a reply.
+        </p>
+        <div class="store-buttons">
+          <a
+            class="store-btn"
+            href="https://www.play.google.com"
+            target="playstore"
+          >
+            <img src="../assets/play_store.png" alt="" />
+          </a>
+          <a
+            class="store-btn"
+            href="https://www.apple.com/app-store/"
+            target="appstore"
+          >
+            <img src="../assets/app_store.png" alt="" />
+          </a>
+        </div>
+        <div id="hero__img">
+          <img src="../assets/images/hero_desktop.png" alt="" />
+        </div>
+      </section>
+
+      <!-- ABOUT section -->
+      <section class="about">
+        <div class="section__wrapper">
+          <h2 class="section__header" id="about__heading">
+            What can Ear1 help you do?
+          </h2>
+          <p class="section__text">
+            Are you an individual looking to connect with an influencer without
+            the hassle of waiting for the reply over a long time, or an
+            influencer looking to filter your dm’s and connect with your
+            audience, Ear1 has got you covered.
+          </p>
+        </div>
+      </section>
+
+      <!-- FANS 1 section -->
+      <section class="fans-1">
+        <div class="section__wrapper" id="fans-1__wrapper">
+          <div class="fans-1__text">
+            <p class="pill">Fans</p>
+            <h2 class="section__header">
+              Connect with top influencers in your field
+            </h2>
+            <p class="section__text">
+              From Tech to music to business, Ear1 has a wide range of industry
+              experts in diverse fields you have always wanted to connect with.
+              Now is your best chance.
+            </p>
+          </div>
+          <div class="fans-1__image">
+            <img src="../assets/images/portrait_bg_3.png" alt="" />
+            <img src="../assets/images/portrait_bg_2.png" alt="" />
+            <img src="../assets/images/portrait_bg_1.png" alt="" />
+            <img
+              src="../assets/images/portrait_guy_smiling.png"
+              alt="influencer"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- FANS 2 section -->
+      <section class="fans-2">
+        <div class="fans-2__text fans-2__unit">
+          <!-- needs different wrapper because of diff in layout -->
+          <div class="fans-2__wrapper">
+            <div class="text__top">
+              <p class="pill">Fans</p>
+              <div class="msg-icon">
+                <img src="../assets/msg_icon.png" alt="" />
+              </div>
+            </div>
+            <h2 class="section__header">Be assured of replies</h2>
+            <p class="section__text">
+              With ear1, we assure you of getting a response to your messages.
+              Don’t be part of the noise in the dms. Get ahead of the game by
+              paying a small fee.
+            </p>
+          </div>
+        </div>
+        <div class="fans-2__chat fans-2__unit">
+          <div class="fans-2__wrapper">
+            <div class="chat__top">
+              <img src="../assets/left-arrow.png" alt="" />
+              <img src="../assets/images/chris.png" alt="" />
+            </div>
+            <div class="chat__bottom"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./app.js"></script>
+  </body>
 </html>
