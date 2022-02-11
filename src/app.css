@@ -881,6 +881,9 @@ footer {
     width: 25rem;
     margin-right: 6rem;
   }
+  .assurance__text {
+    margin-left: 5rem;
+  }
   .cta {
     /* padding: 5rem 8rem; */
     padding-bottom: 0;
