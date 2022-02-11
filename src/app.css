@@ -194,9 +194,12 @@ nav .logo img {
 
 /* ABOUT SECTION */
 .about {
-  background-image: url("../assets/noise.png");
+  background-image: url("../assets/noise.png"),
+    url("../assets/pattern_small.png"), url("../assets/pattern.png");
   background-color: #fafafa;
-  background-size: contain;
+  background-size: contain, 10%, contain;
+  background-repeat: no-repeat;
+  background-position: left, left top, right;
   display: flex;
   justify-content: center;
 }
