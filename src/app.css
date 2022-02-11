@@ -239,6 +239,7 @@ nav .logo img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
 }
 .fans-2__wrapper,
 .influencer-2__wrapper {
