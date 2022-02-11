@@ -185,11 +185,12 @@ nav .logo img {
 #hero__img {
   width: 100%;
   margin-top: 3rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 #hero__img img {
   width: 100%;
   margin-right: 2rem;
+  margin-bottom: -2rem;
 }
 
 /* ABOUT SECTION */
@@ -348,8 +349,12 @@ nav .logo img {
 .influencer-1 .section__wrapper {
   padding-bottom: 0;
 }
+.influencer-1__pic {
+  overflow: hidden;
+}
 .influencer-1__pic img {
   width: 18rem;
+  margin-bottom: -0.5rem;
 }
 /* INFLUENCER 2 SECTION */
 .influencer-2 {
@@ -373,6 +378,7 @@ nav .logo img {
 .influencer-2__phone {
   background-color: #272727;
 }
+
 .influencer-2__phone .phone {
   width: 22rem;
   height: 20rem;
