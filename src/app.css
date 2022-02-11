@@ -33,7 +33,27 @@ a:active {
   background-color: #ffbb62;
   margin-bottom: 2rem;
 }
-
+.pill.orange {
+  background-color: #ff8c62;
+}
+.icon {
+  border: 2.5px solid #ffbb62;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon.orange {
+  border: 2.5px solid #ff8c62;
+}
+.text__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
 body {
   font-family: "DM Sans", sans-serif;
   min-width: 360px;
@@ -217,38 +237,29 @@ nav .logo img {
   flex-direction: column;
   justify-content: center;
 }
-.fans-2__wrapper {
+.fans-2__wrapper,
+.influencer-2__wrapper {
   width: 100%;
   margin: 0 5%;
 }
-.fans-2__unit {
+.fans-2__unit,
+.influencer-2__unit {
   display: flex;
   justify-content: center;
 }
 .fans-2__text {
   background-color: #039352;
+  display: flex;
+  align-items: center;
 }
 .fans-2__text .fans-2__wrapper {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
-.fans-2 .text__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-}
+
 .fans-2 .pill {
   margin-bottom: 0;
 }
-.fans-2 .msg-icon {
-  border: 2.5px solid #ffbb62;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .fans-2 .section__header,
 .fans-2 .section__text {
   color: white;
@@ -257,6 +268,155 @@ nav .logo img {
   background-image: url("../assets/noise.png");
   background-color: #f0f0e6;
   background-size: contain;
+}
+.fans-2__chat .chat__top {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+}
+.fans-2__chat .chat__top img:nth-of-type(2) {
+  width: 4rem;
+  margin: 0 1rem;
+}
+.fans-2__chat .chat__messages {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.fans-2__chat .msg {
+  background-color: white;
+  padding: 0.5rem;
+  padding-bottom: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.fans-2__chat .msg p {
+  max-width: 20rem;
+}
+
+.fans-2__chat .received {
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+.fans-2__chat .sent {
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+.fans-2__chat .chat__time {
+  position: absolute;
+  font-size: 0.75rem;
+  margin-top: 0.2rem;
+}
+.fans-2__chat .sent .chat__time {
+  right: 1rem;
+}
+.fans-2__chat .chat__bottom {
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.chat__bottom .text-box {
+  width: 100%;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+.chat__bottom .text-box img {
+  width: 1.5rem;
+}
+.chat__bottom .text-box img:first-of-type {
+  margin-left: auto;
+}
+
+/* INFLUENCER 1 SECTION */
+.influencer-1 {
+  display: flex;
+  justify-content: center;
+}
+.influencer-1 .section__wrapper {
+  padding-bottom: 0;
+}
+.influencer-1__pic img {
+  width: 18rem;
+}
+/* INFLUENCER 2 SECTION */
+.influencer-2 {
+}
+.influencer-2__wrapper {
+}
+.influencer-2 .pill {
+  margin-bottom: 0;
+  color: black;
+}
+.influencer-2__text {
+  background-color: #202020;
+  color: white;
+}
+.influencer-2 .section__text {
+  color: rgba(150, 150, 150);
+}
+.influencer-2__text .influencer-2__wrapper {
+  padding: 3rem 0;
+}
+.influencer-2__phone {
+  background-color: #272727;
+}
+.influencer-2__phone .phone {
+  width: 22rem;
+  height: 20rem;
+  margin: auto;
+  margin-bottom: 4rem;
+
+  border: 15px solid #2e2e2e;
+  /* background-color: #2e2e2e; */
+  border-top: none;
+  filter: drop-shadow(0px 10px 20px rgba(4, 4, 4, 0.2));
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  align-items: flex-end;
+}
+.influencer-2 .popup {
+  background-color: #363636;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 0 #2e2e2e;
+}
+.influencer-2 .popup__msg {
+  display: flex;
+  font-size: 0.8rem;
+  color: rgba(150, 150, 150);
+  margin-bottom: 2rem;
+}
+.influencer-2 .popup__msg span {
+  color: white;
+}
+.influencer-2 .popup__msg img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+.influencer-2 .popup__buttons {
+  display: flex;
+  gap: 1rem;
+}
+.influencer-2 button {
+  width: 100%;
+  /* font-size: 1.25rem; */
+  color: white;
+  background-color: #e34d4d;
+  padding: 0.6rem 2rem;
+  border-radius: 0.3rem;
+  border-style: none;
+}
+.influencer-2 button.green {
+  background-color: #029c56;
 }
 
 /* MEDIA QUERIES */
@@ -287,6 +447,26 @@ nav .logo img {
   .fans-1__image img {
     right: 0;
   }
+  .influencer-1 .section__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .influencer-1__text {
+    grid-column: 2/3;
+  }
+  .influencer-1 .section__text {
+    max-width: 30rem;
+  }
+  .influencer-1__pic {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: -3rem;
+    justify-content: flex-end;
+  }
+  .influencer-1__pic img {
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
 }
 
 /* 1080 px */
@@ -304,7 +484,7 @@ nav .logo img {
     max-width: 43rem;
   }
   .section__wrapper {
-    width: 80%;
+    width: 85%;
     padding: 6rem 0;
   }
   .nav__wrapper {
@@ -352,17 +532,51 @@ nav .logo img {
     grid-template-columns: 1fr 1fr;
     flex-direction: row;
   }
-  .fans-2__wrapper {
-    margin: 0 20%;
+  .fans-2__wrapper,
+  .influencer-2__wrapper {
+    margin: 0 15%;
+  }
+  .influencer-1__pic img {
+    width: 20rem;
+  }
+  .influencer-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .influencer-2__text .influencer-2__wrapper {
+    padding: 6rem 0;
+  }
+  .influencer-2__text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  /* .influencer-2__phone {
+    grid-column: 1/2;
+  } */
+  .influencer-2__phone .phone {
+    width: 30rem;
+    /* height: 25rem; */
+    min-height: 29rem;
+  }
+  .influencer-2 .popup {
+    padding: 2rem;
+  }
+  .influencer-2 .popup__msg,
+  button {
+    font-size: 1.25rem;
+  }
+  .influencer-2 .popup__msg img {
+    width: 3.75rem;
+    height: 3.75rem;
   }
 }
 
 /* 1440px */
 @media (min-width: 90rem) {
   .section__header {
-    font-size: 4.5rem;
-    line-height: 4.5rem;
-    max-width: 35rem;
+    font-size: 4.25rem;
+    line-height: 4.25rem;
+    max-width: 32rem;
   }
   .nav__wrapper {
     width: 70%;
@@ -374,5 +588,9 @@ nav .logo img {
   }
   .fans-1__image img {
     width: 22rem;
+  }
+
+  .influencer-1__pic img {
+    width: 25rem;
   }
 }
